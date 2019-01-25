@@ -1,0 +1,413 @@
+
+body {
+    direction: rtl;
+    background-color: var(--yellowColor);
+}
+
+/* color use in site 
+---------------------------------- */
+:root {
+    --yellowColor: #f6ff23;
+    --blackColor: #303030;
+    --grayColor: #ddd;
+}
+/*End*/
+
+
+/* Scrollbar
+------------------------------------------------*/
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: #ffe44c; 
+}
+/*End*/
+
+
+/* Fonts Used In The Site
+------------------------------------------------*/
+@font-face {
+    font-family: DinNextBold;
+    src: url("../webfonts/DIN Next LT W23 Bold.otf"); 
+}
+@font-face {
+    font-family: DinNextMedium;
+    src: url("../webfonts/DIN Next LT W23 Medium.otf"); 
+}
+@font-face {
+    font-family: NotoFont;
+    src: url("../webfonts/NotoKufiArabic-Regular.ttf"); 
+}
+/* End */
+
+
+/* Group
+------------------------------------------------*/
+header .circle-shape1,
+header .circle-shape2,
+header .circle-shape3,
+header .circle-shape4,
+header .circle-shape5,
+header .circle-shape6
+{
+    background-color: transparent;
+    border-radius: 50%;
+    opacity: 0.2;
+    border: 8px solid #ffc923;
+}
+header .circle-shape1,
+header .circle-shape3,
+header .circle-shape4,
+header .circle-shape5
+{
+    width: 30px;
+    height: 30px;
+}
+header .circle-shape2,
+header .circle-shape6
+{
+    width: 20px;
+    height:20px;
+}
+
+section.ads .box-ad button,
+section.order form input
+{
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+/*End*/
+
+
+/* Header - Style
+------------------------------------------------*/
+header 
+{
+    height:100vh;
+    background: url('../images/pattern.png') no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+header section.overlay 
+{
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    /* background Header => Photo Not Coloring -- Remove Comment
+    -------------------------------------------------------------
+        background-color: var(--yellowColor);
+        opacity: 0.8;
+    */
+}
+header 
+{
+    overflow: hidden;
+}
+header section.overlay .box-text img 
+{
+    margin-bottom: 15px;
+}
+header section.overlay .box-text h2 
+{
+    font: 50px NotoFont;
+}
+header section.overlay .box-text h1 
+{
+    margin-top: 14px;
+    font: 60px DinNextMedium;
+}
+header section.overlay .box-text h2,
+header section.overlay .box-text h1 
+{
+    color: var(--blackColor);
+}
+header .circle-big 
+{
+    position: absolute;
+    top: -110px;
+    left: -75px;
+    width: 650px;
+    height: 650px;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+header .circle-small 
+{
+    position: absolute;
+    top: -110px;
+    left: -75px;
+    width: 638px;
+    height: 638px;
+    background-color: #fff; 
+    border-radius: 50%;
+    overflow: hidden;
+}
+header .circle-small .box-img  
+{
+    margin-top: 160px;
+}
+header .circle-shape1 
+{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+header .circle-shape2 
+{
+    position: absolute;
+    top: 88px;
+    left: 385px;
+}
+header .circle-shape3 
+{
+    position: absolute;
+    top: 398px;
+    left: 50px;
+}
+header .circle-shape4 
+{
+    position: absolute;
+    top: 238px;
+    left: -15px;
+}
+header .circle-shape5 
+{
+    position: absolute;
+    top: -15px;
+    left: 420px;
+}
+header .circle-shape6 
+{
+    position: absolute;
+    top: 244px;
+    left: 508px;
+}
+header .scroll-bottom-under 
+{
+    position: absolute;
+    bottom: -133px;
+    right: -133px;
+    width: 285px;
+    height: 285px;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+header .scroll-bottom-over 
+{
+    position: absolute;
+    bottom: -133px;
+    right: -133px;
+    width: 268px;
+    height: 268px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 69px 81px 0 0;
+}
+header .scroll-bottom-over i
+{
+    font-size: 22px;
+}
+/*End*/
+
+
+/* Test - Style
+------------------------------------------------*/
+section.ads {
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+section.ads .box-ad
+{
+    height: 272px;
+    margin-bottom: 30px;
+    background: #fff url(../images/ads-pattern.png) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+    border-radius: 3px;
+    overflow: hidden;
+}
+section.ads .box-ad img
+{
+    margin: 40px 40px 38px 0;
+}
+section.ads .box-ad button
+{
+    float: left;
+    width: 115px;
+    margin: 50px 0 0 40px;
+    padding: 6px 0 8px 0;
+    background-color: var(--yellowColor);
+    font: 14px DinNextMedium;
+    color: var(--blackColor);
+    border: 0;
+    outline: 0;
+    border-radius: 100px;
+    box-shadow: 0 0px 11px var(--yellowColor);
+    cursor: pointer;
+}
+section.ads .box-ad button:hover
+{
+    background-color: var(--blackColor);
+    box-shadow: 0 0px 11px var(--blackColor);
+    color: var(--yellowColor);
+}
+section.ads .box-ad p
+{
+    width: 395px;
+    margin: 0 104px 0 0;
+    font: 24px DinNextBold;
+    line-height: 36px;
+    font: 24px DinNextBold;
+    position: relative;
+}
+section.ads .box-ad p:before{
+    content: '';
+    width: 45px;
+    height: 1px;
+    background-color: var(--blackColor);
+    position: absolute;
+    right: -60px;
+    top: 23px;
+}
+/*End*/
+
+
+/* iPhon Ads - Style
+------------------------------------------------*/
+section.iphon-ads
+{
+    overflow: hidden;
+}
+section.iphon-ads img
+{
+    display: block;
+    margin: auto;
+}
+/*End*/  
+
+
+/* Order - Style
+------------------------------------------------*/
+section.order 
+{
+    background-color:var(--yellowColor);
+    min-height: 500px;
+    overflow: hidden;
+    padding-top: 70px;
+    box-shadow: 0px -4px 17px -12px black;
+}
+section.order h2
+{
+    font-family: DinNextMedium;
+    color: var(--blackColor)
+}
+section.order form
+{
+    width: 484px;
+    margin: 60px auto;
+    padding: 40px;
+  background-color: #fff;
+  
+}
+section.order form input
+{
+    width: 400px;
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px;
+    font: 14px DinNextMedium;
+    color: var(--blackColor);
+    border-bottom: 1px solid #DDD;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    outline: 0;
+}
+section.order form input:not(:last-child):hover{
+    border-bottom: 1px solid #00f;
+}
+section.order form textarea 
+{
+    width: 400px;
+    height: 170px;
+    margin-top: 20px;
+    padding-top: 15px;
+    text-indent: 15px;
+    font: 14px DinNextMedium;
+    color: var(--blackColor);
+    outline: 0;
+    resize: both;
+}
+section.order form input[type="submit"]
+{
+    margin-top: 15px;
+    border-bottom: 0;
+    background-color: var(--yellowColor);
+    cursor: pointer;
+    font: 16px DinNextMedium;
+    color: var(--blackColor)  
+}
+/*End*/
+
+
+/* SVG Photo - Style
+------------------------------------------------*/
+section.svg-photo h2
+{
+    font: 40px DinNextMedium;
+    color: var(--blackColor);
+    margin: 25px 0 50px 0;
+    text-shadow: 5px 1px 0px #fff;
+}
+section.svg-photo svg
+{
+    display: block;
+    margin: auto;
+}
+/*End*/
+
+
+/* Scroll To Top - Style
+------------------------------------------------*/
+section.scroll-top{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px -2px #716f6f;
+}
+section.scroll-top .fa-angle-double-down
+{
+    transform: rotate(180deg);
+}
+/*End*/

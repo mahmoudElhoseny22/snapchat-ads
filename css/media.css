@@ -1,0 +1,91 @@
+/* Ads - Media
+------------------------------------------------*/
+@media(max-width: 1191px) 
+{
+    header .circle-big,
+    header .circle-small
+    {
+        left: -160px;
+    }
+}
+@media(max-width: 1029px) 
+{
+    header .circle-big,
+    header .circle-small
+    {
+        top: -223px;
+    }
+}
+@media(max-width: 960px) 
+{
+    header .circle-big,
+    header .circle-small
+    {
+        top: -280px;
+    }
+}
+@media(max-width: 767px) 
+{
+    header .circle-big,
+    header .circle-small
+    {
+        top: -340px;
+        left: -300px;
+    }
+}
+@media(max-width: 530px) 
+{
+    header .circle-big,
+    header .circle-small
+    {
+        top: -400px;
+        left: -380px;
+    }
+}
+@media(max-width: 400px) 
+{
+    header .circle-big,
+    header .circle-small,
+    header .scroll-bottom-under,
+    header .scroll-bottom-over,
+    section.scroll-top
+    {
+        display: none !important;
+    }
+}
+/*End*/
+
+
+/* Ads - Media
+------------------------------------------------*/
+@media(max-width: 1199px) 
+{
+    section.ads .box-ad p
+    {
+        width: auto;
+    }
+}
+@media(max-width: 991px) 
+{
+    section.ads .box-ad p
+    {
+        width: 395px;
+    }
+}
+@media(max-width: 510px) 
+{
+    section.ads .box-ad p
+    {
+        width: auto;
+    }
+    section.order form
+    {
+        width: auto;
+    }
+    section.order form input,
+    section.order form textarea
+    {
+        width: 90%;
+    }
+}
+/*End*/
